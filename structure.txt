@@ -1,0 +1,29 @@
+    - final-project/
+        - server.js - sets up the server
+        - db.js - connects to the database
+        - .env
+        - routes/
+          - users.js - sets endpoints for getting all users and posting new users
+          - auth.js - sets endpoint for user login with authentication
+          - tasks.js - sets endpoints for getting all tasks, getting all
+                       tasks with same user-id, getting 1 task based on name param,
+                       and posting, updating and deleting tasks based on task id
+          - subTasks.js - sets endpoints for creating and managing subTasks that reference a task
+        - tasks/
+          - checkDueDates.js - cron function for checking if the task due_date has passed.
+                               If it has, it will set passed_due_date to true
+        - client/
+          - public/
+          - src/
+            - app.js
+            - index.js
+            - redux/
+                - store.js
+                - actions.js
+                - reducers.js
+            - components/
+                - Login.js - handles the login form
+                - Register.js - handles the register form
+                - Tasks.js - shows all tasks
+                - AddTask.js - form for posting new task
+
